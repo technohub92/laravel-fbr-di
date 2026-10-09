@@ -9,7 +9,7 @@ return [
     | The base URL of the FBR Digital Invoicing Gateway platform.
     |
     */
-    'base_url' => env('FBR_DI_BASE_URL', 'https://your-portal-domain.com/api'),
+    'base_url' => env('FBR_DI_BASE_URL', 'https://invoicehub.pk/api'),
 
     /*
     |--------------------------------------------------------------------------
@@ -17,7 +17,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Your Client API Key generated from the FBR Digital Invoicing Portal.
-    | Obtain or manage your key at: https://your-portal-domain.com/settings?tab=api
+    | Obtain or manage your key at: https://invoicehub.pk/settings?tab=api
     |
     */
     'api_key' => env('FBR_DI_API_KEY', ''),

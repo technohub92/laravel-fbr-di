@@ -40,7 +40,7 @@ php artisan vendor:publish --tag=fbr-di-config
 
 ```env
 FBR_DI_API_KEY=fbr_live_xxxxxxxxxxxxxxxxxxxxxxxx
-FBR_DI_BASE_URL=https://your-portal-domain.com/api
+FBR_DI_BASE_URL=https://invoicehub.pk/api
 FBR_DI_ENVIRONMENT=sandbox # or 'production'
 ```
 

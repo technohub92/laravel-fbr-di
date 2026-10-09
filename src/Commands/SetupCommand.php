@@ -21,7 +21,7 @@ class SetupCommand extends Command
         if (empty($apiKey)) {
             $hasKey = $this->choice('Do you have an FBR DI Gateway API Key?', ['Yes, I have an API Key', 'No, I need to create an account'], 0);
             if ($hasKey === 'No, I need to create an account') {
-                $portalUrl = config('fbr-di.base_url') ? str_replace('/api', '', config('fbr-di.base_url')) : 'https://your-portal-domain.com';
+                $portalUrl = config('fbr-di.base_url') ? str_replace('/api', '', config('fbr-di.base_url')) : 'https://invoicehub.pk';
                 $this->warn("👉 Register for your merchant/developer API key at: {$portalUrl}/register");
             }
             $apiKey = $this->secret('Enter your FBR DI API Key (Bearer Token)');
@@ -34,9 +34,9 @@ class SetupCommand extends Command
 
         $environment = $this->option('env') ?: $this->choice('Select target environment:', ['sandbox', 'production'], 0);
         $baseUrl = $this->anticipate('Gateway Base API URL:', [
-            'https://your-portal-domain.com/api',
+            'https://invoicehub.pk/api',
             'http://localhost:8000/api',
-        ], config('fbr-di.base_url', 'http://localhost:8000/api'));
+        ], config('fbr-di.base_url', 'https://invoicehub.pk/api'));
 
         $this->info('');
         $this->line('Testing gateway connection with provided credentials...');

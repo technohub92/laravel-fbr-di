@@ -8,7 +8,7 @@ Fluent, production-ready Laravel SDK for integrating Pakistani FBR PRAL Digital 
 ---
 
 ## Key Features
-- **Auto-Discovery**: Installs in seconds with Laravel 10, 11, and 12.
+- **Auto-Discovery**: Installs in seconds with Laravel 10, 11, 12, and 13+.
 - **Fluent Invoice Builder**: Intuitive, chained API (`FbrDI::invoice()`) for issuing PRAL certified invoices.
 - **Interactive CLI Setup**: `php artisan fbr:setup` connects to the gateway and checks credentials interactively.
 - **Active Taxpayer Lookup**: `FbrDI::verifyTaxpayer('3520248796577')` checks ATL compliance on the fly.

@@ -30,14 +30,14 @@ class TestConnectionCommand extends Command
             $this->line('Gateway Response Time: ' . $res->getStatusCode() . ' OK');
 
             if ($res->hasUpdateAvailable()) {
-                $this->warn("⚠ Notice: An updated version of technohub92/fbr-digital-invoicing ({$res->getLatestVersion()}) is available!");
-                $this->line("👉 Run 'composer update technohub92/fbr-digital-invoicing' to update.");
+                $this->warn("[NOTICE] An updated version of technohub92/laravel-fbr-di ({$res->getLatestVersion()}) is available!");
+                $this->line("Run 'composer update technohub92/laravel-fbr-di' to update.");
             }
 
             return 0;
         }
 
-        $this->error('✗ Connection Failed: ' . $res->message());
+        $this->error('Connection Failed: ' . $res->message());
         return 1;
     }
 }

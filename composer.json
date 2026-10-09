@@ -1,5 +1,5 @@
 {
-    "name": "technohub92/fbr-digital-invoicing",
+    "name": "technohub92/laravel-fbr-di",
     "description": "Official Laravel SDK and fluent integration package for the FBR PRAL Digital Invoicing (DI) API Gateway.",
     "type": "library",
     "license": "MIT",

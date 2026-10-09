@@ -1,13 +1,13 @@
 # Official Laravel FBR Digital Invoicing (DI) SDK
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/technohub92/fbr-digital-invoicing.svg?style=flat-square)](https://packagist.org/packages/technohub92/fbr-digital-invoicing)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/technohub92/laravel-fbr-di.svg?style=flat-square)](https://packagist.org/packages/technohub92/laravel-fbr-di)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 Fluent, production-ready Laravel SDK for integrating Pakistani FBR PRAL Digital Invoicing (SRO 350/2024 & SRO 1832/2024) directly into any Laravel application, ERP, billing platform, or e-commerce shop.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 - **Auto-Discovery**: Installs in seconds with Laravel 10, 11, and 12.
 - **Fluent Invoice Builder**: Intuitive, chained API (`FbrDI::invoice()`) for issuing PRAL certified invoices.
 - **Interactive CLI Setup**: `php artisan fbr:setup` connects to the gateway and checks credentials interactively.
@@ -17,10 +17,10 @@ Fluent, production-ready Laravel SDK for integrating Pakistani FBR PRAL Digital 
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
-composer require technohub92/fbr-digital-invoicing
+composer require technohub92/laravel-fbr-di
 ```
 
 ### Interactive Setup

@@ -1,12 +1,12 @@
 {
-    "name": "ebcdisc/fbr-digital-invoicing",
+    "name": "technohub92/fbr-digital-invoicing",
     "description": "Official Laravel SDK and fluent integration package for the FBR PRAL Digital Invoicing (DI) API Gateway.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "EBC DISC Team",
-            "email": "support@ebcdisc.com"
+            "name": "TechnoHub Team",
+            "email": "support@technohub.pk"
         }
     ],
     "require": {

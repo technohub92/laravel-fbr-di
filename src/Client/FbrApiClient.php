@@ -18,7 +18,7 @@ class FbrApiClient
 
     public function __construct(array $config = [])
     {
-        $this->baseUrl = rtrim($config['base_url'] ?? config('fbr-di.base_url', 'https://ebcdisc.com/api'), '/');
+        $this->baseUrl = rtrim($config['base_url'] ?? config('fbr-di.base_url', 'http://localhost/api'), '/');
         $this->apiKey = $config['api_key'] ?? config('fbr-di.api_key', '');
         $this->environment = $config['environment'] ?? config('fbr-di.environment', 'sandbox');
         $this->timeout = (int) ($config['timeout'] ?? config('fbr-di.timeout', 30));

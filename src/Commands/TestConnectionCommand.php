@@ -30,8 +30,8 @@ class TestConnectionCommand extends Command
             $this->line('Gateway Response Time: ' . $res->getStatusCode() . ' OK');
 
             if ($res->hasUpdateAvailable()) {
-                $this->warn("⚠ Notice: An updated version of ebcdisc/fbr-digital-invoicing ({$res->getLatestVersion()}) is available!");
-                $this->line("👉 Run 'composer update ebcdisc/fbr-digital-invoicing' to update.");
+                $this->warn("⚠ Notice: An updated version of technohub92/fbr-digital-invoicing ({$res->getLatestVersion()}) is available!");
+                $this->line("👉 Run 'composer update technohub92/fbr-digital-invoicing' to update.");
             }
 
             return 0;
